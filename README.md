@@ -7,7 +7,7 @@
 - Only secret of KeyVault and AppInsightComing from App service.
 
 ---
-- Need the Azure function app running to work the Inventory controller properly.
+- Need the Azure function app (ProcessTelemetry project in this github account) running to work the Inventory controller properly.
 ---
 
 - If the user is having valid token in request, context User is set, so the [Authorize] key works. Other way to authenticate, (not being used currently) is login by loginByCookie method. It uses HomeworkAppCookie. Setting CSRF in the login using SameSite = SameSiteMode.Strict can prevent CSRF attacks.
