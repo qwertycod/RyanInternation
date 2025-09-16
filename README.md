@@ -8,6 +8,7 @@
 
 ---
 - Need the Azure function app (ProcessTelemetry project in this github account) running to work the Inventory controller properly.
+Its UI app is RyanInternation-UI
 ---
 
 - If the user is having valid token in request, context User is set, so the [Authorize] key works. Other way to authenticate, (not being used currently) is login by loginByCookie method. It uses HomeworkAppCookie. Setting CSRF in the login using SameSite = SameSiteMode.Strict can prevent CSRF attacks.
